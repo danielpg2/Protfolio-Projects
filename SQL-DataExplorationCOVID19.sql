@@ -1,3 +1,4 @@
+-- COVID 19 Data Exploration 
 
 SELECT location, date, total_cases, new_deaths, total_deaths, population 
 FROM CovidPortfolioProject.dbo.CovidDeaths
