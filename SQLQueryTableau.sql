@@ -1,5 +1,7 @@
--- Global numbers of corona cases
+--Covid 19 Data Visualization
 
+
+-- Global numbers of corona cases
 SELECT  MAX(cast(total_cases AS BIGINT)) AS TotalCases, MAX(CAST(total_deaths AS INT)) AS TotalDeath, (MAX(CAST(total_deaths AS FLOAT)) / MAX(NULLIF(CAST(total_cases AS FLOAT),0)))*100 AS DeathPrecentage
 FROM CovidPortfolioProject.dbo.CovidDeaths
 WHERE continent IS NOT NULL
